@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TastyBites - Delicious Food Company</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-utensils"></i>
+                <span>TastyBites</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Delicious Food</span>
+                    <br>Delivered Fresh
+                </h1>
+                <p class="hero-description">
+                    Experience the finest flavors with our premium quality ingredients and expert culinary craftsmanship. From farm to table, we bring you the best!
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('menu')">
+                        <i class="fas fa-utensils"></i>
+                        View Menu
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                        <i class="fas fa-phone"></i>
+                        Order Now
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card">
+                    <img src="/placeholder.svg?height=400&width=400" alt="Delicious Food" class="hero-food-img">
+                    <div class="floating-elements">
+                        <div class="floating-icon" style="--delay: 0s">🍕</div>
+                        <div class="floating-icon" style="--delay: 1s">🍔</div>
+                        <div class="floating-icon" style="--delay: 2s">🍰</div>
+                        <div class="floating-icon" style="--delay: 0.5s">🥗</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About TastyBites</h2>
+                <p class="section-subtitle">Crafting culinary excellence since 2010</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Made with Love</h3>
+                        <p>Every dish is prepared with passion and attention to detail, using only the finest ingredients sourced from local farms.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Fresh & Organic</h3>
+                        <p>We believe in sustainable cooking practices and use organic, locally-sourced ingredients whenever possible.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3>Award Winning</h3>
+                        <p>Recognized by food critics and loved by customers, our commitment to quality has earned us numerous accolades.</p>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="10000">0</div>
+                        <div class="stat-label">Happy Customers</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="150">0</div>
+                        <div class="stat-label">Menu Items</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="25">0</div>
+                        <div class="stat-label">Expert Chefs</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-label">Awards Won</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Delicious Menu</h2>
+                <p class="section-subtitle">Taste the difference in every bite</p>
+            </div>
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-tab="appetizers">Appetizers</button>
+                <button class="tab-btn" data-tab="mains">Main Course</button>
+                <button class="tab-btn" data-tab="desserts">Desserts</button>
+                <button class="tab-btn" data-tab="beverages">Beverages</button>
+            </div>
+            <div class="menu-content">
+                <div class="tab-content active" id="appetizers">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-image">
+                                <img src="/placeholder.svg?height=200&width=300" alt="Crispy Calamari">
+                                <div class="menu-overlay">
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                            <div class="menu-info">
+                                <h3>Crispy Calamari</h3>
+                                <p>Fresh squid rings with zesty marinara sauce</p>
+                                <span class="price">$12.99</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-image">
+                                <img src="/placeholder.svg?height=200&width=300" alt="Bruschetta">
+                                <div class="menu-overlay">
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                            <div class="menu-info">
+                                <h3>Classic Bruschetta</h3>
+                                <p>Toasted bread with fresh tomatoes and basil</p>
+                                <span class="price">$8.99</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-image">
+                                <img src="/placeholder.svg?height=200&width=300" alt="Wings">
+                                <div class="menu-overlay">
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                            <div class="menu-info">
+                                <h3>Buffalo Wings</h3>
+                                <p>Spicy chicken wings with blue cheese dip</p>
+                                <span class="price">$14.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="mains">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-image">
+                                <img src="/placeholder.svg?height=200&width=300" alt="Grilled Salmon">
+                                <div class="menu-overlay">
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                            <div class="menu-info">
+                                <h3>Grilled Salmon</h3>
+                                <p>Atlantic salmon with lemon herb butter</p>
+                                <span class="price">$24.99</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-image">
+                                <img src="/placeholder.svg?height=200&width=300" alt="Ribeye Steak">
+                                <div class="menu-overlay">
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                            <div class="menu-info">
+                                <h3>Ribeye Steak</h3>
+                                <p>Premium cut with garlic mashed potatoes</p>
+                                <span class="price">$32.99</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-image">
+                                <img src="/placeholder.svg?height=200&width=300" alt="Pasta Carbonara">
+                                <div class="menu-overlay">
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                            <div class="menu-info">
+                                <h3>Pasta Carbonara</h3>
+                                <p>Creamy pasta with pancetta and parmesan</p>
+                                <span class="price">$18.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="desserts">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-image">
+                                <img src="/placeholder.svg?height=200&width=300" alt="Chocolate Cake">
+                                <div class="menu-overlay">
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                            <div class="menu-info">
+                                <h3>Chocolate Lava Cake</h3>
+                                <p>Warm chocolate cake with vanilla ice cream</p>
+                                <span class="price">$9.99</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-image">
+                                <img src="/placeholder.svg?height=200&width=300" alt="Tiramisu">
+                                <div class="menu-overlay">
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                            <div class="menu-info">
+                                <h3>Classic Tiramisu</h3>
+                                <p>Italian dessert with coffee and mascarpone</p>
+                                <span class="price">$8.99</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-image">
+                                <img src="/placeholder.svg?height=200&width=300" alt="Cheesecake">
+                                <div class="menu-overlay">
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                            <div class="menu-info">
+                                <h3>New York Cheesecake</h3>
+                                <p>Rich and creamy with berry compote</p>
+                                <span class="price">$7.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="beverages">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-image">
+                                <img src="/placeholder.svg?height=200&width=300" alt="Fresh Juice">
+                                <div class="menu-overlay">
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                            <div class="menu-info">
+                                <h3>Fresh Orange Juice</h3>
+                                <p>Freshly squeezed Valencia oranges</p>
+                                <span class="price">$4.99</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-image">
+                                <img src="/placeholder.svg?height=200&width=300" alt="Smoothie">
+                                <div class="menu-overlay">
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                            <div class="menu-info">
+                                <h3>Berry Smoothie</h3>
+                                <p>Mixed berries with yogurt and honey</p>
+                                <span class="price">$6.99</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-image">
+                                <img src="/placeholder.svg?height=200&width=300" alt="Coffee">
+                                <div class="menu-overlay">
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                            <div class="menu-info">
+                                <h3>Artisan Coffee</h3>
+                                <p>Premium roasted coffee beans</p>
+                                <span class="price">$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">We're here to serve you better</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>Quick and reliable delivery service to your doorstep within 30 minutes.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Dine In</h3>
+                    <p>Enjoy our cozy atmosphere and exceptional service in our restaurant.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <h3>Takeaway</h3>
+                    <p>Order ahead and pick up your favorite meals at your convenience.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3>Catering</h3>
+                    <p>Professional catering services for your special events and occasions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">We'd love to hear from you</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Address</h3>
+                            <p>123 Food Street, Culinary District<br>Flavor City, FC 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567<br>+1 (555) 987-6543</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>info@tastybites.com<br>orders@tastybites.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Hours</h3>
+                            <p>Mon-Thu: 11AM-10PM<br>Fri-Sun: 11AM-11PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-utensils"></i>
+                        <span>TastyBites</span>
+                    </div>
+                    <p>Crafting delicious experiences since 2010. We're passionate about bringing you the finest flavors and exceptional service.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Dine In</a></li>
+                        <li><a href="#">Takeaway</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Catering</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get updates on new dishes and special offers!</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TastyBites. All rights reserved. | Designed with ❤️ for food lovers</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
